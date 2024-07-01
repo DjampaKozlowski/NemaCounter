@@ -277,8 +277,8 @@ class NemaCounterGUI:
 
         overlay_frame = CTK.CTkFrame(master=parameters_frame, fg_color="transparent")
         overlay_frame.grid(row=4, column=0, columnspan=4, padx=20, pady=20)
-        overlay_switch_text = 'save images copies with the detection box overlay'
-        add_overlay_var = CTK.IntVar(value=0)
+        overlay_switch_text = 'Save images copies with the detection box overlay'
+        add_overlay_var = CTK.IntVar(value=1)
         overlay_switch = CTK.CTkSwitch(master=overlay_frame, variable=add_overlay_var,
                                        onvalue=1, offvalue=0, text=overlay_switch_text)
         overlay_switch.grid(row=0, column=0, padx=(20, 10), pady=(10, 10), sticky="ew")
@@ -386,8 +386,8 @@ class NemaCounterGUI:
 
         overlay_frame = CTK.CTkFrame(master=parameters_frame, fg_color="transparent")
         overlay_frame.grid(row=4, column=0, columnspan=4, padx=20, pady=20)
-        overlay_switch_text = 'save images copies with the segmentation overlay'
-        add_overlay_var = CTK.IntVar(value=0)
+        overlay_switch_text = 'Save images copies with the segmentation overlay'
+        add_overlay_var = CTK.IntVar(value=1)
         overlay_switch = CTK.CTkSwitch(master=overlay_frame, variable=add_overlay_var,
                                        onvalue=1, offvalue=0, text=overlay_switch_text)
         overlay_switch.grid(row=0, column=0, padx=(20, 10), pady=(10, 10), sticky="ew")

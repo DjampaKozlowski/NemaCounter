@@ -59,7 +59,9 @@ def draw_legend_on_image():
     instructions = ["Left Mouse Button: Draw Box", "R Key: Remove Hovering Box", "S Key: Save & Exit Annotations",
                     "ESC Key: Exit Without Saving Annotation"]
     font = cv2.FONT_HERSHEY_SIMPLEX
-    font_scale = 0.5
+    # font_scale = 0.5
+    font_scale = 1
+
     color = (255, 255, 255)
     position = (10, 30)
     for i, line in enumerate(instructions):
