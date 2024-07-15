@@ -4,42 +4,54 @@
 Nemacounter is a versatile tool designed for object detection, manual edition, and object segmentation using sequentially YOLOv5 Object Detection, OpenCV library and Segment Anything Model. This guide provides step-by-step instructions on using the software through its three main tabs: Object Detection, Manual Edition, and Object Segmentation (see below for a detailed user guide).
 
 
-## Installation
+## Installation & Quick test
 
 ### Windows
 
-#### 1 - Download and Install Python for Windows:
-- If you don't have Python already installed, download and install it from [Python's official website](https://www.python.org/downloads/windows/) --> Window installer (x64 or x32).
-- During installation, do not forget to "Add python to path".
-#### 2 - Download and Install Anaconda for Windows:
-- If you don't have Anaconda already installed, download and install it from [Anaconda's official website](https://www.anaconda.com/products/individual). Follow the installation instructions and let the anaconda folder be installed in the “Username” folder as per default.
-#### 3 - Download the Nemacounter ZIP file:
-Download the ZIP file from XXXXXXXXXXXXXXXXXXXXXX and extract it to your Desktop on your computer.
-#### 4 - Create and Activate the Conda Environment:
-Open “Anaconda Prompt” (by searching "anaconda" in your Windows search bar and click on it).
+1. **Download and Install Python for Windows:**
+   - If you don't have Python installed, download and install it from [Python's official website](https://www.python.org/downloads/windows/) --> Window installer (x64 or x32).
+	During installation do not forget to "add python to path".
 
-- Once the terminal is open, create a new environment called "Nemacounter" by copy/pasting the following command: `conda create -n Nemacounter python=3.10`. Press the “Y” key follow by “enter” when prompted in the Anaconda window.
+2. **Download and Install Anaconda for Windows:**
+   - If you don't have Anaconda installed, download and install it from [Anaconda's official website](https://www.anaconda.com/products/individual).
 
-- Activate the environment by copy/pasting the following command: `conda activate Nemacounter` 
-
-- Change directory to the Nemacounter folder in Anaconda command window by copy/pasting the following command: `cd C:\Users\username\Desktop\Nemacounter`. Make sure to replace username by your computer username.
-
-- Install all the required dependencies by copy/pasting the following command: `pip install -r requirements_windows.txt`
-
-- Wait for all dependencies to be downloaded and installed in the Anaconda prompt command window. The Anaconda prompt command window terminal can be close.
-
-### Linux / Max / Windows Sub-System Linux (WSL)
+3. **Clone the Nemacounter folder from Github:**
+   - Go to https://github.com/DjampaKozlowski/NemaCounter to clone/download the Nemacounter folder.
+   - Download the “sam_vit_h_4b8939.pth” model from : https://iastate.box.com/s/akpql0jlvbd5mmw26e2lgya4ul9h1xua 
+     and the   “cystmodel.pt” from : https://iastate.box.com/s/e9kfpkjkrfpye0wgje205023xpcmcgvs
+   - Drap and drop the two downloaded models into the “models” folder located into the Nemacounter folder cloned from Github.
 
 
-#### 5 - Try to run the Application
+4. **Create and Activate the Conda Environment:**
+   - Open Anaconda Prompt (by searching "anaconda" in your windows search bar).
+   - Once the terminal is open, create a new environment called "Nemacounter" by copy/pasting the following command and press Y when   proposed in the Anaconda command window:
+
+         conda create -n Nemacounter python=3.10
+
+   - Activate the environment by copy/pasting the following command:
+   
+         conda activate Nemacounter
+
+   - Install all the required dependencies by copy/pasting the following command:
+ 
+         pip install -r requirements_win.txt
+ 
+   - Wait for all dependencies to be downloaded and installed in the Anaconda command window.
+
 Now that Nemacounter is installed through Anaconda follow the steps below to run the software each time you need to open it:
-- Open “Anaconda Prompt” (by searching "anaconda" in your Windows search bar and click on it).
+   - Open “Anaconda Prompt” (by searching "anaconda" in your Windows search bar and click on it).
+   - Activate the environment by copy/pasting the following command:
 
-- Activate the environment by copy/pasting the following command: `conda activate Nemacounter`
+         conda activate Nemacounter
+ 
+   - Change directory to the Nemacounter folder in Anaconda command window by copy/pasting the following command:
 
-- Change directory to the Nemacounter folder in Anaconda command window by copy/pasting the following command: `cd C:\Users\username\Desktop\Nemacounter`
+         cd C:\Users\username\Desktop\Nemacounter
 
-- Run the software in Anaconda command window by copy/pasting the following command: `python Nemacounter_gui.py` 
+   - Run the software in Anaconda command window by copy/pasting the following command:
+
+         python Nemacounter_gui.py 
+
 
 ## User Guide 
 
