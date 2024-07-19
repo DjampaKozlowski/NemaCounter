@@ -16,25 +16,35 @@ Nemacounter is a versatile tool designed for object detection, manual edition, a
    - If you don't have Anaconda installed, download and install it from [Anaconda's official website](https://www.anaconda.com/products/individual).
 
 3. **Clone the Nemacounter folder from Github:**
-   - Go to https://github.com/DjampaKozlowski/NemaCounter to clone/download the Nemacounter folder.
+   - Go to https://github.com/DjampaKozlowski/NemaCounter to clone/download the Nemacounter folder, and extract it on your Desktop.
    - Download the “sam_vit_h_4b8939.pth” model from : https://iastate.box.com/s/akpql0jlvbd5mmw26e2lgya4ul9h1xua 
      and the   “cystmodel.pt” from : https://iastate.box.com/s/e9kfpkjkrfpye0wgje205023xpcmcgvs
-   - Drap and drop the two downloaded models into the “models” folder located into the Nemacounter folder cloned from Github.
+   - Drag and drop the two downloaded models into the “models” folder located into the Nemacounter folder cloned from Github.
 
 
 4. **Create and Activate the Conda Environment:**
    - Open Anaconda Prompt (by searching "anaconda" in your windows search bar).
    - Once the terminal is open, create a new environment called "Nemacounter" by copy/pasting the following command and press Y when   proposed in the Anaconda command window:
 
-         conda create -n Nemacounter python=3.10
-
+            conda create -n Nemacounter python=3.10
+      
    - Activate the environment by copy/pasting the following command:
-   
-         conda activate Nemacounter
+
+            conda activate Nemacounter
+     
+
+   - Change directory to the Nemacounter folder in Anaconda command window by copy/pasting the following command:
+
+         cd C:\Users\username\Desktop\Nemacounter
+
+   #Make sure to replace username by your computer username in the path. If you extracted/cloned the Nemacounter folder elsewhere than your Desktop, you will have to modify the path accordingly. 
 
    - Install all the required dependencies by copy/pasting the following command:
  
-         pip install -r requirements_win.txt
+          pip install -r requirements_windows.txt
+     
+
+    (Or "requirements_linux.txt" if using Linux)
  
    - Wait for all dependencies to be downloaded and installed in the Anaconda command window.
 
